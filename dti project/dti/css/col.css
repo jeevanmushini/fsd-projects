@@ -1,0 +1,476 @@
+/* Colleges Page Specific Styles */
+.colleges-page {
+    padding-top: 80px;
+}
+
+.colleges-hero {
+    background: linear-gradient(135deg, #4a6bff 0%, #3a56d4 100%);
+    color: white;
+    padding: 80px 0 60px;
+    text-align: center;
+}
+
+.colleges-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.colleges-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.colleges-hero .search-bar {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.colleges-hero .search-bar input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+
+.colleges-hero .search-bar button {
+    padding: 15px 25px;
+    border-radius: 0 5px 5px 0;
+    font-size: 1rem;
+}
+
+.colleges-main {
+    padding: 60px 0;
+}
+
+.filters-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.filters {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.filter-group select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-card {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    min-width: 120px;
+}
+
+.stat-card h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.colleges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.college-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.college-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.college-header {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.college-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid #eee;
+}
+
+.college-basic-info {
+    flex: 1;
+}
+
+.college-basic-info h3 {
+    margin-bottom: 5px;
+}
+
+.college-basic-info h3 a {
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+.college-basic-info h3 a:hover {
+    color: var(--primary-color);
+}
+
+.college-basic-info p {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.college-basic-info i {
+    margin-right: 5px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rating i {
+    color: var(--warning-color);
+    font-size: 0.9rem;
+}
+
+.rating span {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.college-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.detail-item {
+    text-align: center;
+}
+
+.detail-item span {
+    display: block;
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.detail-item strong {
+    font-size: 1.1rem;
+    color: var(--dark-color);
+}
+
+.upcoming-events {
+    margin-bottom: 20px;
+}
+
+.upcoming-events h4 {
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.event-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+    font-size: 0.9rem;
+}
+
+.event-item:last-child {
+    border-bottom: none;
+}
+
+.event-date {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.page-numbers {
+    display: flex;
+    gap: 10px;
+}
+
+.page-numbers a, .page-numbers span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.page-numbers a {
+    color: var(--dark-color);
+}
+
+.page-numbers a:hover {
+    background-color: #f8f9fa;
+}
+
+.page-numbers .active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.featured-colleges {
+    padding: 60px 0;
+    background-color: var(--light-color);
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.featured-college {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.featured-college:hover {
+    transform: translateY(-10px);
+}
+
+.featured-college img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid var(--primary-color);
+    padding: 5px;
+}
+
+.featured-college h3 {
+    margin-bottom: 10px;
+}
+
+.featured-college p {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.location-map {
+    padding: 60px 0;
+}
+
+.map-container {
+    position: relative;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.location-pins {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pin {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.pin::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(74, 107, 255, 0.3);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        width: 20px;
+        height: 20px;
+        opacity: 0.7;
+    }
+    100% {
+        width: 40px;
+        height: 40px;
+        opacity: 0;
+    }
+}
+
+.pin-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--dark-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+.pin-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--dark-color) transparent transparent transparent;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .filters-section {
+        flex-direction: column;
+    }
+    
+    .stats {
+        justify-content: center;
+    }
+    
+    .colleges-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .college-details {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .college-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .college-logo {
+        margin: 0 auto;
+    }
+    
+    .rating {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .colleges-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .colleges-hero p {
+        font-size: 1rem;
+    }
+    
+    .colleges-hero .search-bar {
+        flex-direction: column;
+    }
+    
+    .colleges-hero .search-bar input {
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .colleges-hero .search-bar button {
+        border-radius: 5px;
+        width: 100%;
+    }
+    
+    .filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .pagination {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

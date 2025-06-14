@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackTheFuture 2023 | TechEvents Hub</title>
+    <link rel="stylesheet" href="../css/eve.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>TechEvents Hub</h1>
+                <p>Your gateway to hackathons & tech fests</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="colleges.html">Collages</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="loginBtn">Login</button>
+                <button id="registerBtn">Register</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="event-page">
+        <section class="event-hero">
+            <div class="container">
+                <div class="event-hero-content">
+                    <div class="event-breadcrumb">
+                        <a href="index.html">Home</a> / <a href="events.html">Events</a> / <a href="colleges.html">Colleges</a> / HackTheFuture 2023
+                    </div>
+                    <h1>HackTheFuture 2023</h1>
+                    <div class="event-meta">
+                        <span><i class="fas fa-university"></i> IIT Bombay</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Mumbai, India</span>
+                        <span><i class="fas fa-calendar-alt"></i> Nov 15-17, 2023</span>
+                        <span><i class="fas fa-users"></i> 1250+ Registered</span>
+                    </div>
+                    <div class="event-cta">
+                        <button class="btn btn-primary">Register Now</button>
+                        <button class="btn btn-outline"><i class="far fa-bookmark"></i> Save Event</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="event-main">
+            <div class="container">
+                <div class="event-grid">
+                    <div class="event-content">
+                        <div class="event-image-gallery">
+                            <div class="thumbnail-grid">
+                                <div class="thumbnail" style="background-image: url('../thumbnail1.jpg')"></div>
+                                <div class="thumbnail" id="thumbnail2" style="background-image: url('../thumbnail2.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat; width: 100%; height: 100%;"></div>
+
+                                <div class="thumbnail" style="background-image: url('../thumbnail3.webp')"></div
+                            </div>
+                        </div>
+
+                        <div class="event-tabs">
+                            <div class="tab-header">
+                                <button class="tab-btn active" data-tab="about">About</button>
+                                <button class="tab-btn" data-tab="schedule">Schedule</button>
+                                <button class="tab-btn" data-tab="prizes">Prizes</button>
+                                <button class="tab-btn" data-tab="faq">FAQ</button>
+                                <button class="tab-btn" data-tab="sponsors">Sponsors</button>
+                            </div>
+                            <div class="tab-content">
+                                <div id="about" class="tab-pane active">
+                                    <h2>About HackTheFuture 2023</h2>
+                                    <p>HackTheFuture is IIT Bombay's annual flagship hackathon that brings together the brightest minds from across the country to solve real-world problems through technology. Now in its 8th edition, this year's theme is "Sustainable Futures Through Technology".</p>
+                                    
+                                    <h3>Event Highlights</h3>
+                                    <ul>
+                                        <li>36-hour hackathon with mentorship from industry experts</li>
+                                        <li>Prizes worth ₹5 lakhs across multiple categories</li>
+                                        <li>Workshops on cutting-edge technologies</li>
+                                        <li>Networking opportunities with tech leaders</li>
+                                        <li>Campus accommodation and meals provided</li>
+                                    </ul>
+
+                                    <h3>Who Can Participate?</h3>
+                                    <p>This event is open to all undergraduate and postgraduate students from any recognized university or college. Teams of 2-4 members can participate. Solo participants are also welcome but will be grouped with others during the event.</p>
+
+                                    <h3>Themes & Tracks</h3>
+                                    <div class="themes-grid">
+                                        <div class="theme-card">
+                                            <i class="fas fa-leaf"></i>
+                                            <h4>Sustainability Tech</h4>
+                                            <p>Solutions for environmental challenges</p>
+                                        </div>
+                                        <div class="theme-card">
+                                            <i class="fas fa-heartbeat"></i>
+                                            <h4>Health Tech</h4>
+                                            <p>Innovations in healthcare</p>
+                                        </div>
+                                        <div class="theme-card">
+                                            <i class="fas fa-graduation-cap"></i>
+                                            <h4>Ed Tech</h4>
+                                            <p>Future of education</p>
+                                        </div>
+                                        <div class="theme-card">
+                                            <i class="fas fa-robot"></i>
+                                            <h4>AI/ML</h4>
+                                            <p>Artificial intelligence applications</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="schedule" class="tab-pane">
+                                    <h2>Event Schedule</h2>
+                                    <div class="schedule-timeline">
+                                        <div class="timeline-item">
+                                            <div class="timeline-date">Day 1 - Nov 15</div>
+                                            <div class="timeline-content">
+                                                <h4>Registration & Opening Ceremony</h4>
+                                                <p><i class="far fa-clock"></i> 9:00 AM - 11:00 AM</p>
+                                                <p>Main Auditorium, IIT Bombay</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-date"></div>
+                                            <div class="timeline-content">
+                                                <h4>Keynote: Future of Technology</h4>
+                                                <p><i class="far fa-clock"></i> 11:30 AM - 12:30 PM</p>
+                                                <p>By Dr. Ananya Sharma, CTO TechFuture Inc.</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-date"></div>
+                                            <div class="timeline-content">
+                                                <h4>Team Formation & Ideation</h4>
+                                                <p><i class="far fa-clock"></i> 1:30 PM - 3:30 PM</p>
+                                                <p>Mentors available for guidance</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-date">Day 2 - Nov 16</div>
+                                            <div class="timeline-content">
+                                                <h4>Hacking Begins</h4>
+                                                <p><i class="far fa-clock"></i> 8:00 AM</p>
+                                                <p>36-hour coding marathon starts</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-date">Day 3 - Nov 17</div>
+                                            <div class="timeline-content">
+                                                <h4>Project Submission</h4>
+                                                <p><i class="far fa-clock"></i> 8:00 PM</p>
+                                                <p>All projects must be submitted</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-date"></div>
+                                            <div class="timeline-content">
+                                                <h4>Demo & Judging</h4>
+                                                <p><i class="far fa-clock"></i> 8:00 PM - 10:00 PM</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-date"></div>
+                                            <div class="timeline-content">
+                                                <h4>Closing Ceremony & Awards</h4>
+                                                <p><i class="far fa-clock"></i> 10:30 PM - 12:00 AM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="prizes" class="tab-pane">
+                                    <h2>Prizes & Opportunities</h2>
+                                    <div class="prizes-grid">
+                                        <div class="prize-card grand-prize">
+                                            <div class="prize-icon"><i class="fas fa-trophy"></i></div>
+                                            <h3>Grand Prize</h3>
+                                            <p class="prize-amount">₹2,00,000</p>
+                                            <p>+ Incubation offer from TechStars</p>
+                                        </div>
+                                        <div class="prize-card">
+                                            <div class="prize-icon"><i class="fas fa-medal"></i></div>
+                                            <h3>Runner Up</h3>
+                                            <p class="prize-amount">₹1,00,000</p>
+                                            <p>+ Mentorship program</p>
+                                        </div>
+                                        <div class="prize-card">
+                                            <div class="prize-icon"><i class="fas fa-award"></i></div>
+                                            <h3>Best Innovation</h3>
+                                            <p class="prize-amount">₹75,000</p>
+                                        </div>
+                                        <div class="prize-card">
+                                            <div class="prize-icon"><i class="fas fa-lightbulb"></i></div>
+                                            <h3>Best First-Time Hackers</h3>
+                                            <p class="prize-amount">₹50,000</p>
+                                        </div>
+                                    </div>
+
+                                    <h3>Additional Opportunities</h3>
+                                    <ul>
+                                        <li>Fast-track interviews with sponsoring companies</li>
+                                        <li>Publication of winning projects on TechCrunch India</li>
+                                        <li>Free AWS credits worth $10,000 for top 3 teams</li>
+                                        <li>Exclusive networking dinner with industry leaders</li>
+                                    </ul>
+                                </div>
+
+                                <div id="faq" class="tab-pane">
+                                    <h2>Frequently Asked Questions</h2>
+                                    <div class="faq-accordion">
+                                        <div class="faq-item">
+                                            <button class="faq-question">Who can participate in HackTheFuture?<i class="fas fa-chevron-down"></i></button>
+                                            <div class="faq-answer">
+                                                <p>The hackathon is open to all undergraduate and postgraduate students from any recognized university or college in India. International students are also welcome but must arrange their own travel and accommodation beyond what we provide.</p>
+                                            </div>
+                                        </div>
+                                        <div class="faq-item">
+                                            <button class="faq-question">What are the team size requirements?<i class="fas fa-chevron-down"></i></button>
+                                            <div class="faq-answer">
+                                                <p>Teams should consist of 2-4 members. Solo participants are allowed to register but will be grouped with other solo participants during the team formation session on Day 1.</p>
+                                            </div>
+                                        </div>
+                                        <div class="faq-item">
+                                            <button class="faq-question">What about accommodation and food?<i class="fas fa-chevron-down"></i></button>
+                                            <div class="faq-answer">
+                                                <p>We provide basic accommodation in campus hostels for all registered participants. Meals (breakfast, lunch, dinner) and snacks will be provided throughout the event. Please mention any dietary restrictions during registration.</p>
+                                            </div>
+                                        </div>
+                                        <div class="faq-item">
+                                            <button class="faq-question">What should I bring to the event?<i class="fas fa-chevron-down"></i></button>
+                                            <div class="faq-answer">
+                                                <p>Bring your laptop, charger, any specialty hardware you plan to use, valid college ID, and personal toiletries. We'll provide extension cords, WiFi, and basic hardware components.</p>
+                                            </div>
+                                        </div>
+                                        <div class="faq-item">
+                                            <button class="faq-question">How are projects judged?<i class="fas fa-chevron-down"></i></button>
+                                            <div class="faq-answer">
+                                                <p>Projects are judged on 4 criteria: Innovation (30%), Technical Complexity (30%), Potential Impact (20%), and Presentation (20%). Each team will have 5 minutes to demo their project to judges.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="contact-organizers">
+                                        <h3>Still have questions?</h3>
+                                        <p>Contact the organizing team at <a href="mailto:hackthefuture@iitb.ac.in">hackthefuture@iitb.ac.in</a> or call +91 9876543210</p>
+                                    </div>
+                                </div>
+
+                                <div id="sponsors" class="tab-pane">
+                                    <h2>Our Sponsors & Partners</h2>
+                                    <div class="sponsors-grid">
+                                        <div class="sponsor-tier">
+                                            <h3>Platinum Sponsors</h3>
+                                            <div class="sponsor-logos">
+                                                <img src="https://via.placeholder.com/200x100?text=TechFuture" alt="TechFuture">
+                                                <img src="https://via.placeholder.com/200x100?text=CodeMaster" alt="CodeMaster">
+                                            </div>
+                                        </div>
+                                        <div class="sponsor-tier">
+                                            <h3>Gold Sponsors</h3>
+                                            <div class="sponsor-logos">
+                                                <img src="https://via.placeholder.com/150x75?text=DataSystems" alt="DataSystems">
+                                                <img src="https://via.placeholder.com/150x75?text=CloudNine" alt="CloudNine">
+                                                <img src="https://via.placeholder.com/150x75?text=AI+Solutions" alt="AI Solutions">
+                                            </div>
+                                        </div>
+                                        <div class="sponsor-tier">
+                                            <h3>Community Partners</h3>
+                                            <div class="sponsor-logos">
+                                                <img src="https://via.placeholder.com/120x60?text=GDG" alt="GDG">
+                                                <img src="https://via.placeholder.com/120x60?text=Women+Who+Code" alt="Women Who Code">
+                                                <img src="https://via.placeholder.com/120x60?text=HackClub" alt="HackClub">
+                                                <img src="https://via.placeholder.com/120x60?text=DevIndia" alt="DevIndia">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="become-sponsor">
+                                        <h3>Interested in Sponsoring?</h3>
+                                        <p>Get your brand in front of India's top tech talent. Contact us at <a href="mailto:sponsors@hackthefuture.in">sponsors@hackthefuture.in</a> for sponsorship opportunities.</p>
+                                        <a href="#" class="btn btn-outline">Download Sponsorship Brochure</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-sidebar">
+                        <div class="sidebar-card register-card">
+                            <h3>Register Now</h3>
+                            <p class="price">Free <span class="original-price">₹500</span></p>
+                            <p class="deadline">Registration closes in 5 days</p>
+                            <button class="btn btn-primary btn-block">Register as Participant</button>
+                            <button class="btn btn-outline btn-block">Register as Mentor</button>
+                            <div class="share-buttons">
+                                <span>Share this event:</span>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-card organizer-card">
+                            <h3>Organized By</h3>
+                            <div class="organizer-info">
+                                <img src="https://via.placeholder.com/80x80?text=IIT+B" alt="IIT Bombay">
+                                <div>
+                                    <h4>IIT Bombay</h4>
+                                    <p>Computer Science Department</p>
+                                    <a href="#">View all events →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-card location-card">
+                            <h3>Location</h3>
+                            <div class="map-container">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.222610388042!2d72.91421431490413!3d19.13355738700242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7f189efc039%3A0x68fdcea4c5c5894e!2sIIT%20Bombay!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                            <p><i class="fas fa-map-marker-alt"></i> Main Auditorium, IIT Bombay, Powai, Mumbai</p>
+                        </div>
+
+                        <div class="sidebar-card similar-events">
+                            <h3>Similar Events</h3>
+                            <div class="similar-event">
+                                <h4>CodeFest 2023</h4>
+                                <p><i class="fas fa-university"></i> IIIT Delhi</p>
+                                <p><i class="fas fa-calendar-alt"></i> Dec 10-12, 2023</p>
+                                <a href="#">View Details →</a>
+                            </div>
+                            <div class="similar-event">
+                                <h4>Innovate India Hackathon</h4>
+                                <p><i class="fas fa-university"></i> NIT Trichy</p>
+                                <p><i class="fas fa-calendar-alt"></i> Jan 5-7, 2024</p>
+                                <a href="#">View Details →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechEvents Hub</h3>
+                    <p>Connecting students with the best tech events across colleges and universities.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="colleges.html">Colleges</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Submit an Event</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@techeventshub.com</li>
+                        <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Bangalore, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 TechEvents Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Event page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tab functionality
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all buttons and panes
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabPanes.forEach(p => p.classList.remove('active'));
+                    
+                    // Add active class to clicked button and corresponding pane
+                    this.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // FAQ accordion
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle answer visibility
+                    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                    
+                    // Rotate icon
+                    icon.classList.toggle('fa-chevron-down');
+                    icon.classList.toggle('fa-chevron-up');
+                });
+            });
+            
+            // Modal functionality (same as main page)
+            const loginBtn = document.getElementById('loginBtn');
+            const registerBtn = document.getElementById('registerBtn');
+            const loginModal = document.getElementById('loginModal');
+            const registerModal = document.getElementById('registerModal');
+            const closeBtns = document.querySelectorAll('.close');
+            const switchToRegister = document.getElementById('switchToRegister');
+            const switchToLogin = document.getElementById('switchToLogin');
+            
+            if (loginBtn) {
+                loginBtn.addEventListener('click', () => {
+                    loginModal.style.display = 'block';
+                });
+            }
+            
+            if (registerBtn) {
+                registerBtn.addEventListener('click', () => {
+                    registerModal.style.display = 'block';
+                });
+            }
+            
+            closeBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    loginModal.style.display = 'none';
+                    registerModal.style.display = 'none';
+                });
+            });
+            
+            if (switchToRegister) {
+                switchToRegister.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    loginModal.style.display = 'none';
+                    registerModal.style.display = 'block';
+                });
+            }
+            
+            if (switchToLogin) {
+                switchToLogin.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    registerModal.style.display = 'none';
+                    loginModal.style.display = 'block';
+                });
+            }
+            
+            window.addEventListener('click', (e) => {
+                if (e.target === loginModal) {
+                    loginModal.style.display = 'none';
+                }
+                if (e.target === registerModal) {
+                    registerModal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

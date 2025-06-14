@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colleges & Universities | TechEvents Hub</title>
+    <link rel="stylesheet" href="../css/col.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>TechEvents Hub</h1>
+                <p>Your gateway to hackathons & tech fests</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="colleges.html" class="active">Colleges</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="loginBtn">Login</button>
+                <button id="registerBtn">Register</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="colleges-page">
+        <section class="colleges-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Colleges & Universities</h1>
+                    <p>Discover institutions that host the best hackathons and tech fests in the country</p>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search by college name, location, or ranking...">
+                        <button><i class="fas fa-search"></i> Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="colleges-main">
+            <div class="container">
+                <div class="filters-section">
+                    <div class="filters">
+                        <div class="filter-group">
+                            <label for="locationFilter">Location:</label>
+                            <select id="locationFilter">
+                                <option value="all">All Locations</option>
+                                <option value="north">North India</option>
+                                <option value="south">South India</option>
+                                <option value="east">East India</option>
+                                <option value="west">West India</option>
+                                <option value="central">Central India</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="typeFilter">Institute Type:</label>
+                            <select id="typeFilter">
+                                <option value="all">All Types</option>
+                                <option value="iit">IITs</option>
+                                <option value="nit">NITs</option>
+                                <option value="iiit">IIITs</option>
+                                <option value="state">State Universities</option>
+                                <option value="private">Private Universities</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="sortBy">Sort By:</label>
+                            <select id="sortBy">
+                                <option value="name">Name (A-Z)</option>
+                                <option value="events">Number of Events</option>
+                                <option value="ranking">NIRF Ranking</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-outline" id="resetFilters">Reset Filters</button>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-card">
+                            <h3>150+</h3>
+                            <p>Colleges Listed</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>500+</h3>
+                            <p>Annual Events</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>50,000+</h3>
+                            <p>Student Participants</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="colleges-grid" id="collegesGrid">
+                    <!-- Colleges will be loaded here via JavaScript -->
+                </div>
+
+                <div class="pagination">
+                    <button class="btn btn-outline" disabled><i class="fas fa-chevron-left"></i> Previous</button>
+                    <div class="page-numbers">
+                        <span class="active">1</span>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <span>...</span>
+                        <a href="#">10</a>
+                    </div>
+                    <button class="btn btn-outline">Next <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-colleges">
+            <div class="container">
+                <h2 class="section-title">Featured Institutions</h2>
+                <div class="featured-grid">
+                    <div class="featured-college">
+                        <img src="https://via.placeholder.com/100x100?text=IIT+B" alt="IIT Bombay">
+                        <h3>IIT Bombay</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.5 (120 reviews)</span>
+                        </div>
+                        <p>Mumbai, Maharashtra</p>
+                        <a href="college.html?id=iitb" class="btn btn-outline">View Profile</a>
+                    </div>
+                    <div class="featured-college">
+                        <img src="https://via.placeholder.com/100x100?text=IIIT+H" alt="IIIT Hyderabad">
+                        <h3>IIIT Hyderabad</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.0 (95 reviews)</span>
+                        </div>
+                        <p>Hyderabad, Telangana</p>
+                        <a href="college.html?id=iiith" class="btn btn-outline">View Profile</a>
+                    </div>
+                    <div class="featured-college">
+                        <img src="https://via.placeholder.com/100x100?text=BITS" alt="BITS Pilani">
+                        <h3>BITS Pilani</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>5.0 (150 reviews)</span>
+                        </div>
+                        <p>Pilani, Rajasthan</p>
+                        <a href="college.html?id=bits" class="btn btn-outline">View Profile</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="location-map">
+            <div class="container">
+                <h2 class="section-title">Colleges by Location</h2>
+                <div class="map-container">
+                    <img src="https://via.placeholder.com/1200x600?text=India+Map+with+College+Locations" alt="India Map with College Locations" class="map-image">
+                    <div class="location-pins">
+                        <div class="pin" style="top: 30%; left: 25%;" data-college="IIT Delhi"></div>
+                        <div class="pin" style="top: 45%; left: 20%;" data-college="IIT Bombay"></div>
+                        <div class="pin" style="top: 60%; left: 30%;" data-college="IIT Madras"></div>
+                        <div class="pin" style="top: 50%; left: 35%;" data-college="IIIT Hyderabad"></div>
+                        <div class="pin" style="top: 35%; left: 15%;" data-college="DTU Delhi"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechEvents Hub</h3>
+                    <p>Connecting students with the best tech events across colleges and universities.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="colleges.html">Colleges</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Submit an Event</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@techeventshub.com</li>
+                        <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Bangalore, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 TechEvents Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login to Your Account</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <div class="auth-links">
+                <p>Don't have an account? <a href="#" id="switchToRegister">Register</a></p>
+                <p><a href="#">Forgot password?</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Create an Account</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Full Name</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerCollege">College/University</label>
+                    <input type="text" id="registerCollege" required>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+            <div class="auth-links">
+                <p>Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Colleges page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sample college data
+            const colleges = [
+                {
+                    id: "iitb",
+                    name: "Indian Institute of Technology Bombay",
+                    shortName: "IIT Bombay",
+                    logo: "https://www.animationxpress.com/wp-content/uploads/2020/09/IIT-Bombay-768x432.png",
+                    location: "Mumbai, Maharashtra",
+                    type: "iit",
+                    region: "west",
+                    nirfRank: 3,
+                    eventsCount: 28,
+                    rating: 4.5,
+                    reviewCount: 120,
+                    upcomingEvents: [
+                        { name: "TechFest 2023", date: "Nov 15-17" },
+                        { name: "HackathonX", date: "Dec 5-7" }
+                    ]
+                },
+                {
+                    id: "iiith",
+                    name: "International Institute of Information Technology Hyderabad",
+                    shortName: "IIIT Hyderabad",
+                    logo: "https://www.nicepng.com/png/detail/270-2702875_iit-hyderabad-logo-indian-institute-of-technology-hyderabad.png",
+                    location: "Hyderabad, Telangana",
+                    type: "iiit",
+                    region: "south",
+                    nirfRank: 5,
+                    eventsCount: 22,
+                    rating: 4.0,
+                    reviewCount: 95,
+                    upcomingEvents: [
+                        { name: "CodeFiesta", date: "Nov 20-22" }
+                    ]
+                },
+                {
+                    id: "nitk",
+                    name: "National Institute of Technology Karnataka",
+                    shortName: "NIT Surathkal",
+                    logo: "https://www.edarabia.com/wp-content/uploads/2013/08/national-institute-of-technology-karnataka-logo-india.jpg",
+                    location: "Surathkal, Karnataka",
+                    type: "nit",
+                    region: "south",
+                    nirfRank: 12,
+                    eventsCount: 18,
+                    rating: 4.2,
+                    reviewCount: 85,
+                    upcomingEvents: []
+                },
+                {
+                    id: "iitd",
+                    name: "Indian Institute of Technology Delhi",
+                    shortName: "IIT Delhi",
+                    logo: "https://www.pngkit.com/png/detail/358-3581667_indian-institute-of-technology-delhi-indian-institute-of.png",
+                    location: "New Delhi",
+                    type: "iit",
+                    region: "north",
+                    nirfRank: 2,
+                    eventsCount: 25,
+                    rating: 4.6,
+                    reviewCount: 135,
+                    upcomingEvents: [
+                        { name: "Innovate India", date: "Dec 10-12" }
+                    ]
+                },
+                {
+                    id: "bits",
+                    name: "Birla Institute of Technology and Science",
+                    shortName: "BITS Pilani",
+                    logo: "https://data.org/wp-content/uploads/2023/05/BITS_Pilani-Logo.png",
+                    location: "Pilani, Rajasthan",
+                    type: "private",
+                    region: "central",
+                    nirfRank: 25,
+                    eventsCount: 20,
+                    rating: 4.7,
+                    reviewCount: 110,
+                    upcomingEvents: [
+                        { name: "BITS Hack", date: "Jan 5-7" },
+                        { name: "Tech Symposium", date: "Feb 15-17" }
+                    ]
+                },
+                {
+                    id: "iitm",
+                    name: "Indian Institute of Technology Madras",
+                    shortName: "IIT Madras",
+                    logo: "https://logowik.com/content/uploads/images/iit-madras-indian-institute-of-technology-madras4653.jpg",
+                    location: "Chennai, Tamil Nadu",
+                    type: "iit",
+                    region: "south",
+                    nirfRank: 1,
+                    eventsCount: 30,
+                    rating: 4.8,
+                    reviewCount: 150,
+                    upcomingEvents: [
+                        { name: "Shaastra", date: "Jan 10-15" }
+                    ]
+                }
+            ];
+
+            // Display colleges
+            const collegesGrid = document.getElementById('collegesGrid');
+            
+            function displayColleges(collegesToShow) {
+                collegesGrid.innerHTML = '';
+                
+                collegesToShow.forEach(college => {
+                    const collegeCard = document.createElement('div');
+                    collegeCard.className = 'college-card';
+                    collegeCard.innerHTML = `
+                        <div class="college-header">
+                            <img src="${college.logo}" alt="${college.shortName}" class="college-logo">
+                            <div class="college-basic-info">
+                                <h3><a href="college.html?id=${college.id}">${college.shortName}</a></h3>
+                                <p><i class="fas fa-map-marker-alt"></i> ${college.location}</p>
+                                <div class="rating">
+                                    ${generateStars(college.rating)}
+                                    <span>${college.rating} (${college.reviewCount} reviews)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="college-details">
+                            <div class="detail-item">
+                                <span>NIRF Rank</span>
+                                <strong>${college.nirfRank}</strong>
+                            </div>
+                            <div class="detail-item">
+                                <span>Annual Events</span>
+                                <strong>${college.eventsCount}</strong>
+                            </div>
+                            <div class="detail-item">
+                                <span>Institute Type</span>
+                                <strong>${getCollegeType(college.type)}</strong>
+                            </div>
+                        </div>
+                        <div class="upcoming-events">
+                            <h4>Upcoming Events</h4>
+                            ${college.upcomingEvents.length > 0 ? 
+                                college.upcomingEvents.map(event => `
+                                    <div class="event-item">
+                                        <span>${event.name}</span>
+                                        <span class="event-date">${event.date}</span>
+                                    </div>
+                                `).join('') : 
+                                '<p>No upcoming events scheduled</p>'}
+                        </div>
+                        <a href="college.html?id=${college.id}" class="btn btn-outline btn-block">View College Profile</a>
+                    `;
+                    collegesGrid.appendChild(collegeCard);
+                });
+            }
+            
+            // Helper functions
+            function generateStars(rating) {
+                let stars = '';
+                const fullStars = Math.floor(rating);
+                const hasHalfStar = rating % 1 >= 0.5;
+                
+                for (let i = 0; i < fullStars; i++) {
+                    stars += '<i class="fas fa-star"></i>';
+                }
+                
+                if (hasHalfStar) {
+                    stars += '<i class="fas fa-star-half-alt"></i>';
+                }
+                
+                const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+                for (let i = 0; i < emptyStars; i++) {
+                    stars += '<i class="far fa-star"></i>';
+                }
+                
+                return stars;
+            }
+            
+            function getCollegeType(type) {
+                const types = {
+                    'iit': 'IIT',
+                    'nit': 'NIT',
+                    'iiit': 'IIIT',
+                    'state': 'State University',
+                    'private': 'Private University'
+                };
+                return types[type] || type;
+            }
+            
+            // Initial display
+            displayColleges(colleges);
+            
+            // Filter functionality
+            document.getElementById('locationFilter').addEventListener('change', filterColleges);
+            document.getElementById('typeFilter').addEventListener('change', filterColleges);
+            document.getElementById('sortBy').addEventListener('change', filterColleges);
+            document.getElementById('resetFilters').addEventListener('click', resetFilters);
+            
+            function filterColleges() {
+                const location = document.getElementById('locationFilter').value;
+                const type = document.getElementById('typeFilter').value;
+                const sortBy = document.getElementById('sortBy').value;
+                
+                let filtered = [...colleges];
+                
+                // Filter by location
+                if (location !== 'all') {
+                    filtered = filtered.filter(college => college.region === location);
+                }
+                
+                // Filter by type
+                if (type !== 'all') {
+                    filtered = filtered.filter(college => college.type === type);
+                }
+                
+                // Sort results
+                switch (sortBy) {
+                    case 'name':
+                        filtered.sort((a, b) => a.shortName.localeCompare(b.shortName));
+                        break;
+                    case 'events':
+                        filtered.sort((a, b) => b.eventsCount - a.eventsCount);
+                        break;
+                    case 'ranking':
+                        filtered.sort((a, b) => a.nirfRank - b.nirfRank);
+                        break;
+                }
+                
+                displayColleges(filtered);
+            }
+            
+            function resetFilters() {
+                document.getElementById('locationFilter').value = 'all';
+                document.getElementById('typeFilter').value = 'all';
+                document.getElementById('sortBy').value = 'name';
+                displayColleges(colleges);
+            }
+            
+            // Map pin hover effect
+            const pins = document.querySelectorAll('.pin');
+            pins.forEach(pin => {
+                pin.addEventListener('mouseover', function() {
+                    const collegeName = this.getAttribute('data-college');
+                    const tooltip = document.createElement('div');
+                    tooltip.className = 'pin-tooltip';
+                    tooltip.textContent = collegeName;
+                    this.appendChild(tooltip);
+                });
+                
+                pin.addEventListener('mouseout', function() {
+                    const tooltip = this.querySelector('.pin-tooltip');
+                    if (tooltip) {
+                        tooltip.remove();
+                    }
+                });
+            });
+            
+            // Modal functionality (same as other pages)
+            const loginBtn = document.getElementById('loginBtn');
+            const registerBtn = document.getElementById('registerBtn');
+            const loginModal = document.getElementById('loginModal');
+            const registerModal = document.getElementById('registerModal');
+            const closeBtns = document.querySelectorAll('.close');
+            const switchToRegister = document.getElementById('switchToRegister');
+            const switchToLogin = document.getElementById('switchToLogin');
+            
+            if (loginBtn) {
+                loginBtn.addEventListener('click', () => {
+                    loginModal.style.display = 'block';
+                });
+            }
+            
+            if (registerBtn) {
+                registerBtn.addEventListener('click', () => {
+                    registerModal.style.display = 'block';
+                });
+            }
+            
+            closeBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    loginModal.style.display = 'none';
+                    registerModal.style.display = 'none';
+                });
+            });
+            
+            if (switchToRegister) {
+                switchToRegister.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    loginModal.style.display = 'none';
+                    registerModal.style.display = 'block';
+                });
+            }
+            
+            if (switchToLogin) {
+                switchToLogin.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    registerModal.style.display = 'none';
+                    loginModal.style.display = 'block';
+                });
+            }
+            
+            window.addEventListener('click', (e) => {
+                if (e.target === loginModal) {
+                    loginModal.style.display = 'none';
+                }
+                if (e.target === registerModal) {
+                    registerModal.style.display = 'none';
+                }
+            });
+        });
+    </script >
+</body>
+</html>
